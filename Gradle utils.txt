@@ -1,0 +1,29 @@
+Gradle manifest place holders
+productFlavors {
+        demo {
+            // Assigns this product flavor to the "version" flavor dimension.
+            // If you are using only one dimension, this property is optional,
+            // and the plugin automatically assigns all the module's flavors to
+            // that dimension.
+            manifestPlaceholders = [ applicationIcon:"@mipmap/ic_launcher" ]
+            dimension "version"
+
+        }
+        full {
+            dimension "version"
+            manifestPlaceholders = [ applicationIcon:"@mipmap/ic_launcher" ]
+        }
+    }
+	
+	
+Manifest
+android:icon="${applicationIcon}"
+
+
+Outfile
+android.applicationVariants.all { variant ->
+    variant.outputs.all { output ->
+        def date = new Date().format('dd/MMM/yyyy')
+        outputFileName = variant.getFlavorName() + "" + date + "/" + variant.versionName + ".apk"
+    }
+}
