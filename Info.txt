@@ -22,3 +22,5 @@ onPause()
 onStop()
 
 Activity launch mode Standard, Single task, Single instance, Single top
+
+Diffrence between hashtable, hashmap, hash set
