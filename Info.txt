@@ -1,0 +1,24 @@
+OOPS Concepts
+Difference between Abstraction(Hiding implementation details) and Encapsulation(Wrapping data into single unit(Access modifiers)
+Abstraction
+String, string buffer and string builder (Real world use)
+
+Activity
+Can we create activity without setContaintView (Yes)
+Life cycle
+Which lifecycle method will be called on pressing backbutton, home button and app iocn
+backbutton >
+onPause()
+onStop()
+onDestroy()
+
+Again pressing app icon
+onCreate()
+onStart()
+onResume()
+
+Home
+onPause()
+onStop()
+
+Activity launch mode Standard, Single task, Single instance, Single top
