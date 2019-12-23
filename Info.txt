@@ -1,4 +1,5 @@
 OOPS Concepts
+Why multiple inheritance not supported in java ? Dimond problem
 Difference between Abstraction(Hiding implementation details) and Encapsulation(Wrapping data into single unit(Access modifiers)
 Abstraction
 String, string buffer and string builder (Real world use)
